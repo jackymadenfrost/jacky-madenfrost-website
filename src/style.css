@@ -1,0 +1,186 @@
+:root {
+  --accent-color: #84d4c8;
+  --accent-color-dark: #65baad;
+  --light-color: #ececec;
+  --titles-color: #142d4c;
+  --secondary-titles-color: #385170;
+  --text-color: #828282;
+  --text-button-color: #25282b;
+  --box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+}
+
+body {
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-color: #f9faff;
+}
+
+.index {
+  background-image: url(Images/background-hero-sm.svg);
+}
+.contact {
+  background-image: url(images/background-hero-sm.svg);
+}
+
+.navbar {
+  padding-top: 0;
+}
+
+.navbar-brand:hover {
+  color: var(--accent-color-dark) !important;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  color: var(--text-color);
+  font-style: normal;
+  font-size: 16px;
+  line-height: 180%;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline;
+  margin: 10px;
+  padding: 2px;
+}
+
+/* .menu-bar {
+  text-align: right;
+  margin-top: -30px;
+} */
+
+h1 {
+  font-family: "Playfair Display", serif;
+  text-align: left;
+  font-size: 64px;
+  color: var(--titles-color);
+}
+h2 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 72px;
+  text-align: center;
+}
+h3 {
+  text-align: left;
+  color: var(--secondary-titles-color);
+  font-family: Nunito;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+h4 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 72px;
+}
+
+p {
+  color: var(--text-color);
+  font-family: "Nunito", sans-serif;
+}
+
+.cool-underline {
+  text-align: center;
+}
+.cool-underline:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 4px;
+  background-color: var(--accent-color);
+}
+
+.btn {
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  color: var(--text-button-color);
+  border-color: var(--accent-color);
+}
+.btn-primary:hover {
+  background-color: var(--accent-color-dark);
+  border-color: var(--accent-color-dark);
+}
+
+.card-thumbnail-primary {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-thumbnail-sm {
+  min-width: 100%;
+}
+
+.card-thumbnail-sm-opposite {
+  min-width: 100%;
+}
+
+.card-thumbnail {
+  background-image: url(images/weather-app-jacky.jpg);
+  border-radius: 0 24px 24px 0;
+}
+
+.card-thumbnail-1 {
+  background-image: url(Images/quemepido-mockup.jpg);
+  border-radius: 24px 0 0 24px;
+}
+
+.card-thumbnail-2 {
+  background-image: url(images/audips-mockup-2.jpg);
+  border-radius: 0 24px 24px 0;
+}
+
+.card {
+  border-radius: 24px;
+}
+
+.footer {
+  background-image: url(Images/footer.svg);
+  min-height: 500px;
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .card-thumbnail-primary {
+    background-image: none;
+  }
+  .card-thumbnail-sm {
+    border-radius: 0 0 24px 24px;
+  }
+  .card-thumbnail-sm-opposite {
+    border-radius: 24px 24px 0 0;
+  }
+}
+@media (min-width: 1000px) {
+  .index {
+    background-image: url(Images/jacky-photo-hero.jpg);
+  }
+  .contact {
+    background-image: url(images/jacky-photo-contact.jpg);
+  }
+}
